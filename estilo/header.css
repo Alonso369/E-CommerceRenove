@@ -1,0 +1,178 @@
+:root {
+    --grey: #514D4D;
+    --dark: #0f0f0f;
+    --fundo: #ada9a9;
+    --amarelo: #EEBE6F;
+    --fundoGeral: #D9D9D9;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background-color: var(--grey);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesquisa {
+    width: fit-content;
+    display: flex;
+    min-height: fit-content;
+    height: fit-content;
+    height: 2rem;
+    border-radius: 999px;
+    overflow: hidden;
+    background-color: white;
+    border: none;
+}
+
+.search-input {
+    font-family: "Open Sans", sans-serif;
+    padding: 1rem;
+    outline: none;
+    border: none;
+}
+
+.search-button {
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    border-radius: 999px;
+    color: var(--dark);
+    font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.icone {
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    margin: 5px;
+}
+
+.carrinho {
+    margin-right: 15px;
+}
+
+
+/* Css do Carrosel */
+
+.carrosel {
+    margin-top: 5rem;
+    background-color: #514D4D;
+    height: 12rem;
+}
+
+.butoonCarrosel {
+    border: none;
+    color: none;
+    background-color: none;
+    height: 12rem;
+}
+
+.indicadoresCarrosel {
+    border: none;
+    height: 0.1rem;
+    width: 2rem;
+    margin: 0.2rem;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+    width: 20rem;
+}
+
+.imgTextConteiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 1.25rem;
+    height: 10px;
+}
+
+.text-Conteiner {
+    display: flex;
+    flex-direction: column
+}
+
+
+/* Menu */
+
+.text-link-menu {
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/* Footer - Rodapé */
+
+
+/* CSS do Footer */
+
+.rodape {
+    background-color: var(--grey);
+    display: flex;
+    margin-top: 35rem;
+    /*Essa propriedade precisa ser retirada... (margin-top) foi teste apenas*/
+    flex-direction: row;
+    row-gap: 1rem;
+    padding: 10px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.rodape a {
+    color: #fff;
+    text-decoration: none;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+}
+
+.textRodape {
+    color: #fff;
+}
+
+.espacoRod {
+    columns: span 2;
+    font-size: medium;
+}
+
+
+/* CSS do Copyright */
+
+.copy {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: small;
+    align-items: center;
+    text-align: center;
+    padding: 4px;
+}
