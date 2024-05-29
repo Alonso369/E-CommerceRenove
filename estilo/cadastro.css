@@ -1,0 +1,46 @@
+:root {
+    --grey: #514D4D;
+    --dark: #0f0f0f;
+    --fundo: #ada9a9;
+    --amarelo: #EEBE6F;
+    --fundoGeral: #D9D9D9;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background-color: var(--grey);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.icone {
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    margin: 5px;
+}
+
+.carrinho {
+    margin-right: 15px;
+}
