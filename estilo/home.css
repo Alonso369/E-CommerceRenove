@@ -80,45 +80,21 @@ header {
 
 /* Css do Carrosel */
 
-.carrosel {
-    margin-top: 5rem;
-    background-color: #514D4D;
-    height: 12rem;
+.carousel {
+    margin-top: 7.8rem;
+    background-color: var(--grey);
+    padding-top: 3rem;
 }
 
-.butoonCarrosel {
-    border: none;
-    color: none;
-    background-color: none;
-    height: 12rem;
+.carousel-item {
+    height: 16rem;
 }
 
-.indicadoresCarrosel {
-    border: none;
-    height: 0.1rem;
-    width: 2rem;
-    margin: 0.2rem;
-}
-
-.imagem {
-    display: flex;
-    justify-content: center;
-    height: 20rem;
-    width: 20rem;
-}
-
-.imgTextConteiner {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    gap: 1.25rem;
-    height: 10px;
-}
-
-.text-Conteiner {
-    display: flex;
-    flex-direction: column
+.carousel-inner img {
+    object-fit: contain;
+    overflow: hidden;
+    height: 10rem;
+    width: auto;
 }
 
 
