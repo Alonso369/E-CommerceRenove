@@ -1,26 +1,46 @@
-import { produtos } from "../Json/produtos";
-// Função para exibir os produtos na página
-function exibirProdutos(produtos) {
+const carregarProdutos = async() =>{
     try {
-        const listaProdutos = document.getElementById('product-list');
-    
-        produtos.forEach(produto => {
-            const produtoCard = document.createElement('div');
-            produtoCard.classList.add('product');
-    
-            produtoCard.innerHTML = `
-                <img src="${produto.imagem}" alt="${produto.nome}">
-                <h2>${produto.nome}</h2>
-                <p>${produto.descricao}</p>
-                <div class="price">${produto.preco}</div>
-                <button>Comprar</button>
-            `;
-            listaProdutos.appendChild(produtoCard);
-        });
+        const response = await fetch('json/produtos.js');//fazendo uma requisição http para o Json, e retornando uma promisse
+        const produtos = await response.json();
+        return produtos;
     } catch (error) {
-        
+        console.error("Error ao carregar produtos.", error);
     }
 }
 
-// Chama a função para carregar os produtos ao iniciar a página
-exibirProdutos(produtos);
+//rederização dos produtos
+async function renderizarProdutos() {
+    const produtosConstainer = document.getElementById('produtosContainer');
+    const arrayProdutos = await carregarProdutos();
+    arrayProdutos.forEach(prod => {
+        const produtoCard = document.createElement('div');
+        produtoCard.classList.add('col-lg-3', 'col-md-4', 'col-sm-6');
+        produtoCard.innerHTML =
+        `
+            <div class = "card h-100 mx-2>
+                <div class = "card-body">
+                <img src = "img/${prod.imagem}" alt = "" class = "img-fluid mb-2">
+                    <h2>${prod.nome}</h2>
+                    <p>${prod.descricao}</p>
+                    <p>${prod.preco}</p>
+                    <button data-id = "${prod.id}" class = "btAdicionar btn btn-primary">
+                    Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        `;
+        produtoCard.querySelector('.btAdicionar').addEventListener('click', AdionarItemCarrinho);
+        produtosConstainer.appendChild(produtoCard);
+    });
+    localStorage.setItem('produtos', JSON.stringify(arrayProdutos));
+}
+
+window.onload = async() => {
+    try {
+        renderizarProdutos();
+    } catch (error) {
+        console.error('Error ao carregar produtos no window.onload', error);
+    }
+}
+
+
+
