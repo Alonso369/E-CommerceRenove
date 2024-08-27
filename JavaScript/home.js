@@ -1,17 +1,19 @@
-const carregarProdutos = async() =>{
+const carregarProdutos = async() => {
     try {
-        const response = await fetch('json/produtos.js');//fazendo uma requisição http para o Json, e retornando uma promisse
+        const response = await fetch('../json/produtos.js');
         const produtos = await response.json();
         return produtos;
     } catch (error) {
-        console.error("Error ao carregar produtos.", error);
+        console.error('Error ao carregar produtos.', error);
     }
-}
+};
 
-//rederização dos produtos
+carregarProdutos().then(produtos => console.log(produtos)).catch(error => console.error(error));
+
+/*/rederização dos produtos
 async function renderizarProdutos() {
-    const produtosConstainer = document.getElementById('produtosContainer');
-    const arrayProdutos = await carregarProdutos();
+    const produtosConstainer = document.getElementById('product-list');//seleciona um produto html produrado pelo ID = product-list
+    const arrayProdutos = await carregarProdutos();//retorna um array de produtos e a função await permite que o código aguarde a resolução da função assícrona
     arrayProdutos.forEach(prod => {
         const produtoCard = document.createElement('div');
         produtoCard.classList.add('col-lg-3', 'col-md-4', 'col-sm-6');
@@ -28,10 +30,10 @@ async function renderizarProdutos() {
                 </div>
             </div>
         `;
-        produtoCard.querySelector('.btAdicionar').addEventListener('click', AdionarItemCarrinho);
+        //produtoCard.querySelector('.btAdicionar').addEventListener('click', AdionarItemCarrinho);
         produtosConstainer.appendChild(produtoCard);
     });
-    localStorage.setItem('produtos', JSON.stringify(arrayProdutos));
+    localStorage.setItem('produtos', JSON.stringify(arrayProdutos));//adiciona o produto no local storage
 }
 
 window.onload = async() => {
@@ -40,7 +42,7 @@ window.onload = async() => {
     } catch (error) {
         console.error('Error ao carregar produtos no window.onload', error);
     }
-}
+}*/
 
 
 

@@ -154,3 +154,6 @@ header {
 }
 
 /* CSS para os cards */
+.product{
+    height: 13rem;
+}
