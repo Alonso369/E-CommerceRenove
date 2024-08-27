@@ -25,7 +25,7 @@
     "nome": "Esfregadeira De Mão",
     "descricao": "Tabua De Lavar Roupa Aço Galvanizado Adams",
     "preco": "R$ 142,40",
-    "imagem": "esfregadeiraAluinio.png"
+    "imagem": "esfregadeiraAluminio.png"
   },
   {
     "id": "5",

@@ -157,3 +157,14 @@ header {
 .product{
     height: 13rem;
 }
+.card {
+    --padding: 1rem;
+}
+
+.img-card {
+    width: 350px;
+    height: auto;
+}
+.card-body {
+    padding: 1rem;
+}
