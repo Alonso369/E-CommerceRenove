@@ -33,7 +33,7 @@ async function renderizarProdutos() {
         produtoCard.querySelector('.btAdicionar').addEventListener('click', AdicionarItemCarrinho);
         produtosConstainer.appendChild(produtoCard);
     });
-    //localStorage.setItem('produtos', JSON.stringify(arrayProdutos));//adiciona o produto no local storage
+    localStorage.setItem('produtos', JSON.stringify(arrayProdutos));//adiciona o produto no local storage
 }
 
 window.onload = async() => {
@@ -54,7 +54,7 @@ function AdicionarItemCarrinho(e) {
         localStorage.setItem('carrinho', JSON.stringify(carrinho));
         alert("Produto adicionado ao carrinho");
     } else {
-        alert('Produto encontrado');
+        alert('Produto encontrado.');
     }
 }
 
