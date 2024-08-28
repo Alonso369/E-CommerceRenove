@@ -31,8 +31,7 @@
 }
 
 
-/* Menu */
-
+ /*Menu*/ 
 .text-link-menu {
     color: var(--dark);
     text-decoration: none;
@@ -40,8 +39,22 @@
 }
 
 
-/* Footer - Rodapé */
 
+/* CSS para os cards */
+.product{
+    height: 13rem;
+}
+.card {
+    padding: 1rem;
+}
+
+.img-card {
+    width: 350px;
+    height: auto;
+}
+.card-body {
+    padding: 1rem;
+}
 
 /* CSS do Footer */
 
@@ -86,18 +99,3 @@
     padding: 4px;
 }
 
-/* CSS para os cards */
-.product{
-    height: 13rem;
-}
-.card {
-    padding: 1rem;
-}
-
-.img-card {
-    width: 350px;
-    height: auto;
-}
-.card-body {
-    padding: 1rem;
-}

@@ -1,14 +1,18 @@
 async function renderizarCabecalho() {
     const cabecalhoConstainer = document.getElementById('cabecalhoContainer');
 
-    const cabecalhoCard = document.createElement('header');
+    const cabecalhoCard = document.createElement('div');
     cabecalhoCard.innerHTML = ` 
         <header>
         <nav class="cabeçalho">
             <div>
                 <img class="logo" src="../Galeria/Logo.png" alt="Logo da empresa do site" title="Logo da empresa">
             </div>
-
+            <div class="pesquisa">
+                <input class="search-input" placeholder="Pesquisar..." type="text " name="q">
+                <button class="search-button"><i class="fa fa-search "></i>
+                        Buscar</button>
+            </div>
             <div>
                 <ul>
                     <li class="icone">
