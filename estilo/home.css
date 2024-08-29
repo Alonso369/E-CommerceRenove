@@ -56,46 +56,5 @@
     padding: 1rem;
 }
 
-/* CSS do Footer */
 
-.rodape {
-    background-color: var(--grey);
-    display: flex;
-    margin-top: 35rem;
-    /*Essa propriedade precisa ser retirada... (margin-top) foi teste apenas*/
-    flex-direction: row;
-    row-gap: 1rem;
-    padding: 10px;
-    justify-content: space-between;
-    padding: 5px;
-}
-
-.rodape a {
-    color: #fff;
-    text-decoration: none;
-    font-size: small;
-    display: flex;
-    flex-direction: row;
-}
-
-.textRodape {
-    color: #fff;
-}
-
-.espacoRod {
-    columns: span 2;
-    font-size: medium;
-}
-
-
-/* CSS do Copyright */
-
-.copy {
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-    font-size: small;
-    align-items: center;
-    text-align: center;
-    padding: 4px;
-}
 

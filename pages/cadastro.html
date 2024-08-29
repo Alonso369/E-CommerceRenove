@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilo/cadastro.css">
-    <link rel="stylesheet" href="../estilo/cabecalho.css">
+    <link rel="stylesheet" href="../estilo/header.css">
+    <link rel="stylesheet" href="../estilo/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> x
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +18,62 @@
 
 <body>
     <header id="header" ></header>
+
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Primeiro Nome</label>
+            <input type="email" class="form-control" id="inputPrimeiroNome">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="inputSobrenome">
+          </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Número | Bairro | Referência">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento | Studio | Floricultura">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="Pato Branco">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label form-select-lgmb-3">Estado</label>
+          <input type="text" class="form-control" id="inputEstado" placeholder="Paraná"></label>
+        </div>
+        
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">País</label>
+          <input type="text" class="form-control" id="inputZip" placeholder="Brasil">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Eu li e concordo com os termos
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </div>
+      </form>
     
-    <!--Meio-->
     <footer id="footer"></footer>
 
     <script src="../JavaScript/app.js" type="module"></script>
+    <script src="../JavaScript/cadastro.js"></script>
 </body>
 
 </html>

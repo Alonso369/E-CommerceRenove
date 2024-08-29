@@ -12,7 +12,7 @@ export const headerContainer =
             <div>
                 <ul>
                     <li class="icone">
-                        <a href="/pages/carrinho.html"><i class="carrinho text-warning fa fa-shopping-cart"></i></a>
+                        <a href="../pages/carrinho.html"><i class="carrinho text-warning fa fa-shopping-cart"></i></a>
                     </li>
                 </ul>
             </div>
@@ -21,9 +21,9 @@ export const headerContainer =
             <a class="text-link-menu navbar-brand font-weight-bold" href="#">Tintas</a>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="text-link-menu nav-item nav-link active text-dark" href="/pages/home.html">Home <span class="sr-only">(Página atual)</span></a>
-                    <a class="text-link-menu nav-item nav-link" href="/pages/cadastro.html">Cadastro</a>
-                    <a class="text-link-menu nav-item nav-link" href="/pages/produto.html">Produto</a>
+                    <a class="text-link-menu nav-item nav-link active text-dark" href="../pages/home.html">Home <span class="sr-only">(Página atual)</span></a>
+                    <a class="text-link-menu nav-item nav-link" href="../pages/cadastro.html">Cadastro</a>
+                    <a class="text-link-menu nav-item nav-link" href="../pages/produto.html">Produto</a>
                     <a class="text-link-menu nav-item nav-link disabled" href="#">Desativado</a>
                 </div>
             </div>
