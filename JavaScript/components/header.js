@@ -1,10 +1,6 @@
-async function renderizarCabecalho() {
-    const cabecalhoConstainer = document.getElementById('cabecalhoContainer');
-
-    const cabecalhoCard = document.createElement('div');
-    cabecalhoCard.innerHTML = ` 
-        <header>
-        <nav class="cabeçalho">
+export const headerContainer = 
+`
+<nav class="cabeçalho">
             <div>
                 <img class="logo" src="../Galeria/Logo.png" alt="Logo da empresa do site" title="Logo da empresa">
             </div>
@@ -32,16 +28,4 @@ async function renderizarCabecalho() {
                 </div>
             </div>
         </nav>
-    </header>
-    `;
-    //adiciona o conteúdo criado ao elemento cabeçalhoContainer
-    cabecalhoConstainer.appendChild(cabecalhoCard);
-}
-
-window.onload = async => {
-    try {
-        renderizarCabecalho();
-    } catch (error) {
-        console.error("Error ao carregar o cabeçalho.", error);
-    }
-}
+`;
