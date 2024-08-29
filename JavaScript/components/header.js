@@ -5,7 +5,7 @@ export const headerContainer =
                 <img class="logo" src="../Galeria/Logo.png" alt="Logo da empresa do site" title="Logo da empresa">
             </div>
             <div class="pesquisa">
-                <input class="search-input" placeholder="Pesquisar..." type="text " name="q">
+                <input class="search-input" placeholder="Renove.com.br" type="text " name="q">
                 <button class="search-button"><i class="fa fa-search "></i>
                         Buscar</button>
             </div>

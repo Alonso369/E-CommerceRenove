@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../estilo/header.css">
     <link rel="stylesheet" href="../estilo/footer.css">
+    <link rel="stylesheet" href="../estilo/carrinho.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
@@ -16,7 +17,30 @@
 </head>
 <body>
     <header id="header"></header>
-    <!--Meio-->
+    
+    <h2 class="top">Carrinho de Compras</h2>
+    <div class="content">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 mt-5 mx-auto">
+                <table id="tbProducts" class="table table-houver">
+                    <thead>
+                        <tr>
+                            <th>Imagem</th>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <p id="total"></p>
+            </div>
+        </div>
+    </div>
     <footer id="footer"></footer>
     <script src="../JavaScript/app.js" type="module"></script>
 </body>

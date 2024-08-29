@@ -1,19 +1,22 @@
 /* CSS do Footer */
+:root {
+    --grey: #514D4D;
+    --salmao: #fff;
+}
 
 .rodape {
     background-color: var(--grey);
     display: flex;
-    margin-top: 7rem;
-    /*Essa propriedade precisa ser retirada... (margin-top) foi teste apenas*/
-    flex-direction: row;
-    row-gap: 1rem;
-    padding: 10px;
+    flex-direction: row; 
+    padding: 0;
+    margin: 0;
+    position: relative;
+    padding: 10px 0;
     justify-content: space-between;
-    padding: 5px;
 }
 
 .rodape a {
-    color: #fff;
+    color: var(--salmao);
     text-decoration: none;
     font-size: small;
     display: flex;
@@ -21,7 +24,7 @@
 }
 
 .textRodape {
-    color: #fff;
+    color: var(--salmao);
 }
 
 .espacoRod {
@@ -34,7 +37,7 @@
 
 .copy {
     background-color: rgb(0, 0, 0);
-    color: #fff;
+    color: var(--salmao);
     font-size: small;
     align-items: center;
     text-align: center;
