@@ -1,5 +1,5 @@
-export const footerContainer = 
-`
+export const footerContainer =
+    `
 <div class="rodape">
             <div>
                 <h3 class="espacoRod font-weight-bold">FOOT CONTENT</h3>
@@ -10,8 +10,8 @@ export const footerContainer =
                 </h3>
                 <a href>Seja um associado</a>
                 <a href>Anuncie seus produtos</a>
-                <a href>Gerencie seu conteudo</a>
-                <a href>Gerencie seu conteudo</a>
+                <a href>Formas de Pagamento</a>
+                <a href>Fale conosco</a>
                 <a href>Gerencie seu conteudo</a>
                 <a href>Faça sua carreira</a>
             </div>
